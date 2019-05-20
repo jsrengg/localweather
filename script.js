@@ -18,7 +18,7 @@ $(document).ready(function() {
     $.getJSON( api, function(data) {
       $('#place').html(data["name"]);
       $('#deg').html(Math.round(data.main.temp));
-      console.log(data.weather[0].main);
+      $('#description').html((data.weather[0].description).toUpperCase());
       switch (data.weather[0].main) {
         case "Rain":
             $("img").attr("src", "https://lh3.googleusercontent.com/TQ8eUNw62cno-RVLmYiH7KFmC07_CRRKcFOumNtm_jWdkeQyk5guDBJkERKbUNTKI_MTAdC3m-ewqVF0cNQsXvIaWRl8CRzeytPkfLTwD9WSnelmlQA2cZi_7Jr4TEKShI4GJTZul-9f_edYXSznjRKzdWfqt2Db4t9ye3hAzd3Pi0vhDXo-0clJmvovQZM-EBPBwkIFoBNu54dYBYLAINsinvAF46OcVFmZ4S0Fr6eKNoL7U-5h7U5JUcov-2ptpBcsG0-69wxyJRx3G-cMOwNZ3aZ-3kWlED8cRd_Jo1cu2Z2yk8G6e4UBws8aBliYCbBNjk17x0E1dvgqJcQ3i8ge-HbEfbg-68HEUDhtf_mR4p-iMLvceuCuilg_xYlgPSpe7PH1uhKMbBdqLZSlOR65HHVCU2Zsc3L4YkBe8h5X3RSmlpa0IYoW3wthyZBPbel62ssQdXozlvxUPoAHVTvyN46_XS5LCzzKiBZK-UBu7hMVd61EthTG9-18KG_Oac416M8Zhg7z34uf9mNLtC7VVwOnVEgW3h4JblnbBv6dJ-klZq32V9V1O4mo6K4kqelZuWQvXNSRg-VySKgcCBL7H3wnK_dLUjUR60VxicUqKNcuAKy4hRzJjG_ZhvmA2tjyiTdFNyT_HGPARLBXVyybyZRg--U=s512-no");   
