@@ -8,5 +8,5 @@ Build a Codepen.io app that is functionally similar to https://codepen.io/freeCo
 - Can see a different icon depending on the weather
 - Can push a button to toggle between Fahrenheit and Celsius
 
-### View Project in Codepen
+# View Project in Codepen
 https://codepen.io/jsreng/pen/wyvZbK
